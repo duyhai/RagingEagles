@@ -1,0 +1,34 @@
+Fontos bugok:
+
+//JAVÍTVA//-Exterminator fúrói eltûnnek, mikor a hajójuk is elpusztul
+//JAVÍTVA//-Exterminator mozgása még mindig fura. Szerintem legyen olyan mozgása mint a követõ rakétáknak, de lassab legyen, mint a hõshajó, így még el lehet elõle menekülni valahogy.
+//JAVÍTVA//-SpeedStar lefelé kimegy a képbõl, két lövedék közé szorulva pedig néha felle ugrál
+//JAVÍTVA//-Exterminator fúrói nem illeszkednek a hajóra.(A fúrók átméretezése miatt)
+//JAVÍTVA//-Speedstarban van fuel rendszer?
+//JAVÍTVA//-offscreen kill ne generáljon robbanást(optimalizáció)
+-Kéne egy jobb hitTest rendszer, mert elég sokszor a semminek ütközve robbannak a dolgok. 
+Szerintem a hajóknak lehetne egy több kisebb movieclipekbõl/téglalapokból álló tömbje, 
+amikkel lefedjük a hajókat és ütközést detektálunk .
+//JAVÍTVA//-Csak akkor legyen vége egy pályának ha minden ellenséges hajó megsemmisült vagy kiment a képernyõrõl.
+-A háttérnél néha az alul csúszó rész egyik fele hiányzik.
+-A speedstarnál anno még elfelejtettem mondani, de csak a jobb szélsõ harmadban mozoghat a képernyõnek.
+//JAVÍTVA//-Lézerhajó nem lõ elsõ pályán.
+//JAVÍTVA//-A betöltés nem sikerül valamiért. Ha nincs mentés akkor normálisan indul. Amúgy egyéltalán minek mentjük el, hogy melyik hullám jön?
+-TalentMenuben tudunk lõni a hajóval.
+-A lézer eleje még mindig elég nyomott.
+-A lövedékek indulási pozícióját korrigálni kell.
+-A meltdown zero-nak a nyalábja túl sokáig lõ egyhuzamban.
+-OverLord meg nincs kesz.
+-Palya csak akkor erjen veget ha minden hajo halott.
+-Neha a kornyezo x9 lovedekek is meghalnak es sebeznek belenk mikor egy nekunk megy. wtf
+
+Kisebb bugok:
+-//FIXED//: Libraryben a hátterek nem teljesen vektorkompatibilisek.
+-//FIXED//: Néhány háttérég helyreigazítása. (Referenciapont átállításával)
+-//JAVÍTVA//Flashbõl eredõ grafikai bug a hõs rakétahajóknál.
+-//FIXED//: Rakéták vektorizálása jó lenne.
+-//FIXED//: Néhány hajónál bugos a gradient színezés.
+-Esetleg gradient kivétele a modellekbõl egy megoldás(Lehetséges teljesítmény növekedés).
+-Enyhe lassulás tapasztalható a fúró hajónál.
+-//DISMISSED//: Remnant cube kb halhatatlan egy remnant cube mellett(Ez nem feltétlenül bug, szerintem akár maradhatna így is)
+-//FIXED//: Remnant cube grafikai bug

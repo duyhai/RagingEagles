@@ -1,0 +1,317 @@
+Bui Duy Hai üzenete (22:15):
+szia
+Szabó Máté üzenete (22:16):
+Szia!
+Bui Duy Hai üzenete (22:16):
+átküldöd a displaytext kijavitott változatát?
+meg ha most ráérsz akkor megbeszélhetnénk pár dolgot a raging eaglesel kapcsolatban
+Szabó Máté üzenete (22:16):
+persze
+Szabó Máté üzenete (22:17):
+var scoreFormat = new TextFormat("Comic Sans MS", 20, 0xffffff);
+			scoreText = new TextField();
+			scoreText.defaultTextFormat = scoreFormat;
+scoreText.x = 290;
+scoreText.text = String(0 );
+addChild(scoreText);
+Azt hiszem ez minden.
+Bui Duy Hai üzenete (22:18):
+aha
+kösz
+Bui Duy Hai üzenete (22:19):
+jó akkor beszéljük meg a játékmenetet, mert anélkül nem igazán tudunk mit leprogramozni
+közben meg írhatsz magadnak egy teendõ listát hogy akkor ehhez mit kell majd megcsinálni
+Bui Duy Hai üzenete (22:20):
+aztánn azt majd fellõjök svn-re és akkor már tudunk dolgozni
+Szabó Máté üzenete (22:20):
+oké
+Bui Duy Hai üzenete (22:21):
+én arra gondoltam hogy 3 féle hajót választhatnáénk amivel lehetnénk
+Bui Duy Hai üzenete (22:22):
+lenne egy ami fúrókat lõ, ezek átmennének az ellenfeleken, de kevesebbet sebez
+lenne egy lézeres ami sokat lõ
+lenne egy rakétás ami területit sebez
+esetleg lehetne még egy ami nem lõ semmit, hanem a barbár kihajol az ablakon és dobálja a baltákat, de ezt esetleg berakhatnánk feloldható képességként is
+Bui Duy Hai üzenete (22:23):
+valami ellenvetés vagy javaslat hozzá?
+Szabó Máté üzenete (22:24):
+Igen. Nekem pedig az jutott eszembe hogy lehet hogy jó lenne ha nem valami menübõl kéne kiválasztani õket hanem ez már a játék része lenne. Csak annyi hogy lent vana  talajon egymás melletta három hajó, és valami pálcikaemberrel tudsz menni jobbra-balra, aztán valamelyikbe beszállsz mondjuk egy egérkattintással.
+A lézert milyennek képzelted el? Olyan star warsos?
+Szabó Máté üzenete (22:25):
+Mármint ilyen szaggatott vonal?
+Bui Duy Hai üzenete (22:25):
+ja ez jó ötlet én arra gondoltam hogy valami képregéynszerûséggel inditanánk a sztorit és akkor eljutnánk egy olyan pontra ahol ki kell választani
+hmm, én sortüzesre gondoltam elõször, de ha pl folyamatos csikot húz akkor is kb ugyanaz a játéákmechanizmus csak más vizuálisan tûnik másnak
+Szabó Máté üzenete (22:26):
+Mert esetleg azt is lehetne hogy a lézer folyamatos vonal, és így hosszabb ideig rajta kell maradni a célponton hogy elpusztítsd.
+Így a három fajta hajóval mind kicsit másképpen kellen játszani.
+Bui Duy Hai üzenete (22:26):
+ja, a folyamatos nyaláb sokkal jobban néz ki
+Bui Duy Hai üzenete (22:27):
+arra nem gondfoltam hogy más játékstilust is igényel, de most hogy igy mondod akkor minden szempontból jobb
+Bui Duy Hai üzenete (22:28):
+a hajókiválasztásra még valami gondolat?
+meg a baltás dologról mit gondolsz?
+Szabó Máté üzenete (22:29):
+Szerintem ez egy jó képesség lenne.
+Egyébként azon is gondolkodtam hogy hogyan lehetne a hajókat továbbfejleszteni, de erre nem nagyon jutott eszembe semmi jó.
+Bui Duy Hai üzenete (22:30):
+nekem van rá koncepcióm, majd rátérünk arra is
+Szabó Máté üzenete (22:30):
+Ban ugye a szokásos dolog hogy többet lõ. Ez nem túl kreatív, meg pl. fúróval talán nem is lenne túl jó. De a balta az már egyedi.
+Ja, oké.
+Szabó Máté üzenete (22:31):
+Nekem csak a rakétákra van normális ötletem.
+Bui Duy Hai üzenete (22:31):
+a hajóválasztást még döntsük el hogy mi hogy aztán rátérhetünk a képességekre
+Bui Duy Hai üzenete (22:32):
+az intro képregényes választás jó? vagy nem teljesen értettem azt a pálcikaemberes megvalósitást
+Szabó Máté üzenete (22:34):
+Az én ötletem csak annyi lenne hogy nem egy bevezetõ képsor vagy animáció lenne, hanem ennél kicsit interaktívabb. Úgy választhatnád ki a hajót hogy odasétálsz mellé (mondjuk hogy néhány leszállt a bolygób ) és leütsz egy gombot.
+Bui Duy Hai üzenete (22:35):
+hmm
+akkor mondjuk az intro játszódna egy mozgós oldalrascrollozós részben és aztán egyszer bele kéne ugrani valamelyikbe?
+Szabó Máté üzenete (22:36):
+Igen.
+Bui Duy Hai üzenete (22:36):
+végülis megcsinálhatjuk, csak nem tudom, hogy mennyire nézne ki jól ha megcsinálnánk
+mert ez pluszanimációt igényelne
+Bui Duy Hai üzenete (22:37):
+hmm, végülis kell egy futás meg egy ugrásanimáció
+leprogramozni kb plusz 500 sor?
+beleférhet
+Szabó Máté üzenete (22:37):
+Az embernek elég lenne ha a sziluettjét látnánk, de egyébként igen, ez bizonytalan.
+Bui Duy Hai üzenete (22:38):
+hmm
+megvan hogyan csinálhatnánke gy köztes megoldást
+lehet egy intro képsor
+Bui Duy Hai üzenete (22:39):
+és mondjuk a sztori egy pontján el kell kötnie egy gépet
+és mondjuk ez este lenne
+és akkor belefér hogy csak sziluett van
+Szabó Máté üzenete (22:40):
+Akkor legyen ez?
+Bui Duy Hai üzenete (22:40):
+mondjuk ez így szerintem lehet hogy nem illeszkedik a sztoriba. te kinézed hogy egy barbár elkezd sunyiban elkötni egy gépet? 
+Bui Duy Hai üzenete (22:41):
+esetleg még az is lehet, hogy a folytatásba rakjuk bele igy és akkor mondjuk ha már csináltunk egy hentelõs játékot akkor a sztorit egy hentelõs résszel lehetne nyitni
+és akkor már bele is tudjuk rakni a gépválasztást
+Szabó Máté üzenete (22:41):
+Miért, te hogy képzelted el, hogyan szerez hajót?
+Bui Duy Hai üzenete (22:42):
+hú, hát ahhoz az alapsztorit kéne véglegesíteni
+Bui Duy Hai üzenete (22:43):
+eddig nem igazán jutott eszembe semmi nagy ötlet, valami olyasmi körvonalazódott bennem, hogy katonák támadnak meg egy barbár falut és az egyik meg elkezdi üldözni õket, azok elrepülnek és akkor nincs más választása mint spontán beugrani egy ilyen gépbe
+mondjuk nem tudom ez igy mennyire hangzik izginek, ugyhogy ha van jobb koncepciód mondj egyet
+Szabó Máté üzenete (22:44):
+Nekem erre nincs más ötletem. De szerintem ez így renden is van.
+Bui Duy Hai üzenete (22:44):
+*mármint akkor üldözi õket mikor elmennek a támadás után
+Szabó Máté üzenete (22:44):
+Szerintem ennél jobb több alapsztori nem kell egy spaceshooterbe.
+Bui Duy Hai üzenete (22:45):
+esetleg lenne egy másik ötletem
+Bui Duy Hai üzenete (22:46):
+na várj még átgondolom
+Szabó Máté üzenete (22:46):
+oké
+Bui Duy Hai üzenete (22:46):
+na
+Bui Duy Hai üzenete (22:47):
+akkor lehet az hogy nem instant veszi õket üldözõbe, hanem bosszút forral
+és akkor elhatározza hogy elköti az egyik szuperhajót
+és akkor este a sziluettes jelenetnél történne ez
+Bui Duy Hai üzenete (22:48):
+aztán ezt a sztorit ki lehet terjeszteni a következõ részhez is
+Bui Duy Hai üzenete (22:49):
+ez az univerzum hasonlítana az indiánok meg a hódítók korára, cska barbárokkal meg ezekkel a modern pilüótákkal
+a következõ részbe lehetne berakni akkor egy másik fõszereplõt, aki viszont ott helyben levadássza a katonákat, berakunk egy hentelõs részt
+és aztán találkozik a hajókkal és történik a választás
+Bui Duy Hai üzenete (22:50):
+és mivel két fõszereplõ van ezért a 2. részben lehetne olyan is hogy találkoznak, egy ideig repül az elsõ fõszereplõ velünk és segit meg ilyenek
+aztán mondjuk a 3. részben meg már lenne egy ilyen ellenállás ami ilyen barbárok szövetségébõl áll
+nos?
+Szabó Máté üzenete (22:51):
+Ez tetszik.
+Akkor egyelõre maradjunk a képregényes intrónál és hajó-választásnál?
+Bui Duy Hai üzenete (22:52):
+aha
+Szabó Máté üzenete (22:52):
+oké
+Bui Duy Hai üzenete (22:52):
+a sziluettet még meg tudjuk csionálni jól ilyen szinten szerintem
+Szabó Máté üzenete (22:53):
+Szerintem is.
+Bui Duy Hai üzenete (22:53):
+ok, a megvalósításról még beszéljünk pár szót
+Bui Duy Hai üzenete (22:54):
+gondolom az a legegyszerûbb, ha van egy hõshajó õsosztály, aztána  három különbözõ leszármazott három különbözõ lövedékkel egy hõslövedék õsosztállyal és ütközésdetektálás meg ugyanúgy statikus ellenféllistával
+van enneél jobb elképzelésed?
+Szabó Máté üzenete (22:55):
+Nem ezt én is így gondoltam.
+Bui Duy Hai üzenete (22:55):
+ok, akkor írd le, hogy ezeket majd le kell programozni
+Szabó Máté üzenete (22:56):
+A shootorialhoz képpest annyit változtatnék hogy a lövedékeket is eltárolnám listában, és így azoknak az ütközéseit is tudjuk vizsgálni.
+Bui Duy Hai üzenete (22:56):
+öö, azt hiszem akkor a hajókat letudtuk
+akkor elég az ellenfél lövedékeit nem?
+Szabó Máté üzenete (22:56):
+Pl. a játékos rakétája gondolom felrobbantaná az ellenfél rekétáit ha közel robban.
+Bui Duy Hai üzenete (22:57):
+meg az explosion classt kibõvíthetjük még ütközésdetektálással
+Szabó Máté üzenete (22:57):
+Tulajdonképpen igen, de nem hasznontalan ha a sajátunkat is. Nem növeli lénygesen a bonyolultságot, de késõbb hasznos lehet.
+Szabó Máté üzenete (22:58):
+Pontosan mire gondolsz?
+Bui Duy Hai üzenete (22:58):
+ha a rakétafelrobban, akkor ugye egy robbanásfelhõre kell lecserélni
+Bui Duy Hai üzenete (22:59):
+mondjuk gond lehet hogy ha csak simána  hajó robban akkor annak nem kéne sebeznie, de akkor két különbözõ robbanás classt csinálunk
+Szabó Máté üzenete (23:01):
+Igen. De én arra gondoltam hogy az csak dízslet lenne. Ha úgy is területi sebzése van akkor elég kiválasztani valami szimpatikus függvényt (mondjuk a közzéppontban 100-at sebez, attól 150 pixelnyire már 0-t, a kettõ közt pedig /négyzetesen/köbösen/akárhogy csökken. Lehetne olyan powerup vagy fejlesztés is, ami ezt mondjuk lineáris függvényre cseréli.)
+Ez szerintem amiatt is jobb lenne, mert egy gömbszimmetrikus robbanásnál nem iagzán jó téglalpok metszését vizsgálni.
+Szabó Máté üzenete (23:02):
+*téglalapok ütközését/átfedését
+Bui Duy Hai üzenete (23:02):
+igaz
+erre nem gondoltam
+jólvan, akkor szerintem rátérhetünk a képességekre
+Bui Duy Hai üzenete (23:03):
+leírtad hogy kb mit kell leprogramozni?
+Szabó Máté üzenete (23:03):
+Mármint amit eddig megbeszéltünk?
+Bui Duy Hai üzenete (23:03):
+aha
+Szabó Máté üzenete (23:04):
+Igen, ez eddig megvan.
+Bui Duy Hai üzenete (23:04):
+ok
+képességeknél arra gondoltam, hogy lehetne egy képességfa, mint az rpg-kben
+lenne mondjuk három fa pl: berserker, tech, és egy harmadfik amit elfelejtettem
+Bui Duy Hai üzenete (23:05):
+berserkerben lehetnének olyanok mint critical strike esély meg több sebzésbonusz kevesebb hp-ra
+Bui Duy Hai üzenete (23:06):
+a techben lehetne hogy milyen gyorsan követi a kurzort a hajó
+esetleg kis sebzéselnyelési képesség, hajóélet növelése, ami pl az életszázalék függvényében növekvõ sebzés miatt jól is jöhet
+mert akkor ugye több hpra kapnának elõbb bonuszt
+Bui Duy Hai üzenete (23:07):
+aztána harmadik meg hajóspecifikus lehetne
+Bui Duy Hai üzenete (23:08):
+a talentfához egy calsst kéne csinálni tele statikus változókkal, ami az egyes pontok számát jelölnék
+és akkor pl a hajósebzés beregisztrálásánál elég csak a alapsebzés+statikus változó*valahány sebzés-t írni
+Bui Duy Hai üzenete (23:09):
+így akkor 0 pont az adott talentnél nem adna hozzá semmit, 1nél 1szer, 2nél duplán ad bonuszt stb
+nos?
+Szabó Máté üzenete (23:09):
+Értem.
+Szabó Máté üzenete (23:10):
+És a hajóspecifikus fákra vannak ötleteid?
+Bui Duy Hai üzenete (23:10):
+a fúrókra, lehetne olyan, hogy mennyi hajót üt át mielött eltûnik
+Bui Duy Hai üzenete (23:11):
+lézernél esetleg nyalábvastagság
+Szabó Máté üzenete (23:11):
+Én a rakétáknál gondolta a sebzésfüggvény megváltoztatására, illetve az intelligens rakétákra, amik köveik a célpontot (vagy legalábbis megpróbálják )
+Bui Duy Hai üzenete (23:11):
+az jó ötlet
+Szabó Máté üzenete (23:12):
+á, igen azt hiszem a lézerrel aza legjobb amit csinálni lehet.
+Bui Duy Hai üzenete (23:12):
+lézernél még lehetne egy ultimate is, aminél megkapja az átütés képességet, de minden egyes átütésnél fele olyan vastag nyaláb menne át fele sebzéssel
+Bui Duy Hai üzenete (23:13):
+mindegyikhez be lehet vezetni még a lövedékszám növelést is, hogy egyszerre hány rakéta/nyalábot lõjenek
+Szabó Máté üzenete (23:13):
+Ez is jó.
+Bui Duy Hai üzenete (23:15):
+fúrónál lehetne egy olyan hogy minden találatnál duplikálódik és random irányba kilõ az új fúró
+vagy osztódhat is, de szerintem az lehet hogy idegesítõ lenne
+mármint ha átlósan osztódnak
+Bui Duy Hai üzenete (23:16):
+ha viszont egy irányba mennének akkor meg kb ugyanaz lenne mint a lézer csak erõsebb
+lézernél sebzésnövelés is egy opció, mert az inkább gyorsan kicsiket sebez
+mondjuk a nyalábátmérõvel arányos lenne a sebzés?
+Szabó Máté üzenete (23:17):
+A fúrós hajónál egyébként at is lehet hogy magán a hajón is van fúró, amivel ha nekimegyünk az ellenfélnek mi csak kicsit sérülünk, õk meg nagayon.
+Bui Duy Hai üzenete (23:19):
+az jó
+ja, az jobb is mint az osztódós cuc
+Bui Duy Hai üzenete (23:20):
+berserkernél a baltadobálás lehetne az ulti
+technél meg mondjuk egy 1 perc cooldownos életmentõ, ha meghalnál akkor csak 1%hp-ra rak
+Szabó Máté üzenete (23:22):
+De akkor egy percig kb. godmode-ban vagy a sebzésbónusz miatt?
+Bui Duy Hai üzenete (23:23):
+öö nem. egyszer megmenti az életed. 1% hp lesz és 1 percig nem tud megmenteni (másfél vagy 2 perces is lehet, még ki kell balanszolni)
+Szabó Máté üzenete (23:24):
+Ja, oké.
+Bui Duy Hai üzenete (23:25):
+még azt találtam ki, hogy egyes százaléktartományokban máshogy nézne kia  hajó, tehát egyre durvábban nézni ki, lenne valami aurája vagy vörösen izzana, a képernyõ is vagy csak a szée is bevörösödne
+Szabó Máté üzenete (23:28):
+A hajó izzása, meg általában az alakváltozása könnyne megoldható (kb. ahogy a shootorialban is volt), mega  képernyõ szélének a bevöröséde is csak egy plusz moviclip láthatóva tátele.
+Na, ezt szépen leírtam...
+Bui Duy Hai üzenete (23:29):
+szuper
+Bui Duy Hai üzenete (23:30):
+arra is gondoltam hogy lehetne egy szuperképesség amit 5 vagy 10% hp alatt lehetne elnyomni és a következõt csinálja: max hp meg minden ellenfelet és lövedéket elpusztít(kivéve a bosst, azt csak sebezné).
+ez igy lehet hogy túl erõs lenne a tech ultival, ugyhogy lehet hogy hozzá kéne rakni egy olyat hogy minden alkalmazás után több százalékban kapod a sebzéseket
+Szabó Máté üzenete (23:31):
+Ez jó ötlet.
+Bui Duy Hai üzenete (23:32):
+ok, nekem csak ennyi ötletem volt a képességekre, neked van még valami javaslatod?
+Szabó Máté üzenete (23:32):
+Nem, azt hiszem több nincs.
+Bui Duy Hai üzenete (23:32):
+ok, a technikai megvalósítást nagyjából lefedtünk közben nem?
+Szabó Máté üzenete (23:33):
+Igen, szerintem ez rendben van.
+Bui Duy Hai üzenete (23:34):
+jó, ami még kéne az hogy milyen ellenfelek legyenek, meg mondjuk a háttér milyen legyen?
+Szabó Máté üzenete (23:35):
+Hát az ellenfeleknek valamennyire hasonlítaniuk kellen a játékos hajójához.
+Szabó Máté üzenete (23:36):
+A hátteret nem tudom.
+Szabó Máté üzenete (23:37):
+De a shootorialhoz képest azt szépen fel lehetne turbózni. Állhatna több rétegbõl, némelyik esetleg animált is lehetne (báraz lehet hogy sok munka)
+Bui Duy Hai üzenete (23:39):
+a háttérre szerintem elég csak valami sebesen mozgó tájat rakni, mert különben nem biztos hogy átjönne a játék pörgõssége
+esetleg alul még lehetne egy réteg ami felhõkbõl állna
+Szabó Máté üzenete (23:40):
+Akkor még a bolygó légkörében lennénk?
+Bui Duy Hai üzenete (23:41):
+én azt hittem a földön játszódik a játék
+máskülönben elég nehéz lenne kihajolni és baltát hajigálni
+de játszódhat pár pálya az ûrben is
+Szabó Máté üzenete (23:41):
+Gondoltam van valami zsilipkamra  
+Bui Duy Hai üzenete (23:42):
+szerintem mindkét háttér hamar megunható
+Szabó Máté üzenete (23:42):
+Reméljük majd a lövöldözés köti le az emberek figyelmét.
+Bui Duy Hai üzenete (23:42):
+az animált háttért szerintem úgy oldhatnánk meg, hogy lenne egy random háttér ubjektumgeneráló függvényünk
+Bui Duy Hai üzenete (23:43):
+és oda rakunk pár animált cuccot, bolygót, vagy égi elemet és azokat mindig berandomoljuk
+Szabó Máté üzenete (23:43):
+Azt is lehet.
+Bui Duy Hai üzenete (23:44):
+a földön játszó részeknél a háttért gyorsan kéne mozgatni, hogy gyorsan tûnjön a játékmenet
+az ûrben szerintem már nem szükséges
+ott a sok repülõ szirszar meg a bolygók megadják a hangulatot
+Szabó Máté üzenete (23:45):
+Akkor a földi háttérre esetleg mehet egy kis motion blur is.
+Bui Duy Hai üzenete (23:46):
+ja
+Bui Duy Hai üzenete (23:47):
+az ellenfelekkel meg szerintem ráérünk, majd rajzolgatok párat és úgyis csak annyiban térnek el, hogy mit milyen irányban lõnek
+Szabó Máté üzenete (23:48):
+ja
+Bui Duy Hai üzenete (23:48):
+meg még pár bossfight is kéne
+de ezeket majd kitaláljuk
+jó, szerintem akkor mindent megbeszéltünk
+Bui Duy Hai üzenete (23:49):
+svn-t már kipróbáltad?
+Szabó Máté üzenete (23:49):
+Még nem.
